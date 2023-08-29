@@ -21,7 +21,7 @@ class TagsColorsViewController: UIViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "DataTable" {
       guard let controller = segue.destination as? TagsColorsTableViewController else {
-        fatalError("Storyboard mis-configuration. Controller is not of expected type TagsColorTableViewController")
+        fatalError("Controller is not of expected type TagsColorTableViewController")
       }
 
       tableViewController = controller
